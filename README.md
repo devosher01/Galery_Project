@@ -10,7 +10,9 @@ Los usuarios tienen la capacidad de seleccionar una categoría específica para 
 
 ### Visualización de Imágenes
 
-Al hacer clic en una imagen, se despliega en un formato ampliado, acompañada de su nombre y descripción detallada.
+Al hacer clic edocs: Update README.md
+
+Made changes to the README.md file to improve project description and details.n una imagen, se despliega en un formato ampliado, acompañada de su nombre y descripción detallada.
 
 ### Datos de Imágenes
 

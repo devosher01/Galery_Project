@@ -1,11 +1,11 @@
 const contenedorCategorias = document.getElementById("categorias");
+const galeria = document.getElementById("galeria");
 
 contenedorCategorias.addEventListener("click", (e) => {
   e.preventDefault();
-  const categoria = e.target.dataset.categoria;
-  if (categoria) {
-    // console.log(categoria);
-    localStorage.setItem("categoria", categoria);
-    window.location.href = "./galeria.html";
-  }
+   console.log(e.target.closest("a"));
+   if(e.target.closest("a")){
+    galeria.classList.add("galeria--active");
+    document.body.style.overflow = "hidden";
+   }
 });

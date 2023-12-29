@@ -1,6 +1,6 @@
 'use strict';
 
-var data = {
+var dataFotos = {
 	fotos: {
 		america: [
 			{
@@ -431,7 +431,7 @@ var data = {
 	},
 };
 
-const { fotos } = data;
+const { fotos } = dataFotos;
 
 var dataCategorias = {
     categorias: [
@@ -507,9 +507,26 @@ const galeria = document.getElementById("galeria");
 
 contenedorCategorias.addEventListener("click", (e) => {
   e.preventDefault();
-   console.log(e.target.closest("a"));
-   if(e.target.closest("a")){
+  const enlace = e.target.closest("a");
+  console.log(enlace);
+  if (enlace) {
     galeria.classList.add("galeria--active");
     document.body.style.overflow = "hidden";
-   }
+
+    const categoriaActiva = enlace.dataset.categoria;
+    const fotos = dataFotos.fotos[categoriaActiva];
+
+    console.log(fotos);
+
+    fotos.forEach((foto) => {
+      const slide = `
+        <a href="#" class="galeria__carousel-slide">
+            <img class="galeria__carousel-image" src="${foto.ruta}" alt="" />
+        </a>
+        `;
+      galeria.querySelector(".galeria__carousel-slides").innerHTML += slide;
+    });
+
+    galeria.querySelector(".galeria__carousel-slide").classList.add('galeria__carousel-slide--active');
+  }
 });

@@ -48,3 +48,19 @@ La organización de archivos y directorios del proyecto es la siguiente:
 ```
 
 Este diseño modular permite una gestión eficiente del código y facilita su expansión y mantenimiento.
+
+
+## Instrucciones de Uso
+
+1. Abre el archivo `index.html` en tu navegador web.
+2. Explora las categorías haciendo clic en los enlaces proporcionados.
+3. Dentro de cada categoría, navega por las imágenes utilizando los botones de izquierda y derecha.
+4. Haz clic en las miniaturas para ver las imágenes en tamaño grande.
+5. Cierra la galería en cualquier momento usando el botón de cierre.
+
+¡Disfruta explorando el viaje por el mundo!
+
+
+
+
+Este README proporciona una descripción general de las funcionalidades del proyecto, la estructura del proyecto y las tecnologías utilizadas. Además, incluye instrucciones básicas para el uso de la aplicación.
